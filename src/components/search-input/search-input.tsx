@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useCallback } from "react";
 import { initialPopulationData, useStoreContext } from "../../store/store";
 import "./search-input.scss";
 import { debounce } from "lodash";
@@ -14,13 +14,17 @@ function SearchInput() {
   const [search, setSearch] = React.useState<string>("");
   const { dispatch, searchList, selectedLocation } = useStoreContext() as any;
 
-  const getSearchList = async (search: string) => {
-    const data = await fetchSearchList(search);
-    dispatch(createAction(EActions.UPDATE_SEARCH_LIST, data));
-  };
+  const getSearchList = useCallback(
+    async (search: string) => {
+      const data = await fetchSearchList(search);
+      dispatch(createAction(EActions.UPDATE_SEARCH_LIST, data));
+    },
+    [dispatch]
+  );
+
   const debouncedResults = useMemo(() => {
     return debounce(getSearchList, 300);
-  }, []);
+  }, [getSearchList]);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value);
@@ -52,7 +56,7 @@ function SearchInput() {
         dispatch(createAction(EActions.UPDATE_SEARCH_LIST, []));
       });
     }
-  }, [selectedLocation]);
+  }, [dispatch, selectedLocation]);
   return (
     <>
       <span className="relative fit-content">

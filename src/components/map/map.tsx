@@ -53,7 +53,7 @@ function LocationMap() {
   const [searchParams] = useSearchParams();
   const q = searchParams.get("q") || defaultParams.q;
   const place_id = searchParams.get("place_id") || defaultParams.place_id;
-  async function updateMap() {
+  const updateMap = useCallback(async () => {
     if (q && place_id) {
       const queryLocation = await fetchLocationByQuery(q, place_id);
       const sharedLocationExist = !queryLocation.hasOwnProperty("error");
@@ -63,10 +63,11 @@ function LocationMap() {
         );
       }
     }
-  }
+  }, [dispatch, place_id, q]);
+
   useEffect(() => {
     updateMap();
-  }, []);
+  }, [updateMap]);
 
   return (
     <div className="map-container">
