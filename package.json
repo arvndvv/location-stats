@@ -15,7 +15,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-lottie": "^1.2.3",
-    "react-map-gl": "^7.0.21",
+    "react-map-gl": "5.2.11",
     "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
     "sass": "^1.57.1",
