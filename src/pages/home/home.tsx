@@ -3,7 +3,6 @@ import LocationMap from "../../components/map/map";
 import SearchInput from "../../components/search-input/search-input";
 import "./home.scss";
 import { Link } from "react-router-dom";
-import Credit from "../../components/credit/credit";
 
 function Home() {
   return (
@@ -26,7 +25,6 @@ function Home() {
         </span>
       </div>
       <LocationMap></LocationMap>
-      <Credit />
     </div>
   );
 }
