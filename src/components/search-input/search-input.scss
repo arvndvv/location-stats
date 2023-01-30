@@ -15,7 +15,6 @@
   }
   &:focus,
   &:not(:placeholder-shown) {
-    border: 3px solid $primary;
     & + label {
       top: -10px;
       left: 0px;
