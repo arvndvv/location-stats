@@ -10,9 +10,15 @@
     "@types/node": "^16.18.11",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
+    "lodash": "^4.17.21",
+    "mapbox-gl": "^2.12.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-lottie": "^1.2.3",
+    "react-map-gl": "^7.0.21",
+    "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
+    "sass": "^1.57.1",
     "typescript": "^4.9.4",
     "web-vitals": "^2.1.4"
   },
@@ -39,5 +45,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.191",
+    "@types/react-lottie": "^1.2.6"
   }
 }

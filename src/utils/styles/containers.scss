@@ -1,0 +1,11 @@
+@import "./variables/combined-vars.scss";
+@import "./break-points.scss";
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: $spacing-md;
+  @include respond-to("small") {
+    padding: $spacing-xl;
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../utils/styles/variables/combined-vars.scss";
+@import "../../utils/styles/break-points.scss";
+
+.map-container {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  padding: $spacing-sm;
+  background: $light;
+  border-radius: 5px;
+  position: relative;
+}
+.stats {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__info {
+    padding: $spacing-sm;
+    background: $light;
+    display: flex;
+    flex-direction: column;
+  }
+  &__share {
+    display: flex;
+    gap: $spacing-sm;
+    align-items: center;
+    justify-content: center;
+    padding: $spacing-sm;
+    // background: $light;
+    height: 100%;
+    position: absolute;
+    right: -40%;
+  }
+  p {
+    font-size: $spacing-text;
+  }
+}

@@ -1,0 +1,23 @@
+h1 {
+  font-size: $spacing-text-xl;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+}
+h2 {
+  font-size: $spacing-text-lg;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+}
+
+p {
+  font-size: $spacing-text-md;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
