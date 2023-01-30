@@ -48,7 +48,7 @@ function LocationMap() {
     } else {
       setViewport((prev) => ({ ...prev, active: false }));
     }
-  }, [selectedLocation]);
+  }, [onSelectLocation, selectedLocation]);
 
   const [searchParams] = useSearchParams();
   const q = searchParams.get("q") || defaultParams.q;

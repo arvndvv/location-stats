@@ -5,7 +5,7 @@ function Credit() {
     <div className="w-full text-center mb-4">
       Designed & Developed By{" "}
       <b>
-        <a href="https://arvnd.in" target="_blank">
+        <a href="https://arvnd.in" target="_blank" rel="noreferrer">
           Aravind
         </a>
       </b>
