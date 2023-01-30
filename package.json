@@ -15,12 +15,13 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-lottie": "^1.2.3",
-    "react-map-gl": "5.2.11",
+    "react-map-gl": "^7.0.21",
     "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
     "sass": "^1.57.1",
     "typescript": "^4.9.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "worker-loader": "^3.0.8"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -48,7 +49,6 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.14.191",
-    "@types/react-lottie": "^1.2.6",
-    "@types/react-map-gl": "^6.1.3"
+    "@types/react-lottie": "^1.2.6"
   }
 }
