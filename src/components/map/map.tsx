@@ -7,6 +7,11 @@ import { EActions, ILocation, IViewport } from "../../models";
 import { createAction, fetchLocationByQuery } from "../../utils/_helpers";
 import { useSearchParams } from "react-router-dom";
 import ShareButton from "../share-button/share-button";
+import mapboxgl from "mapbox-gl";
+// eslint-disable-next-line import/no-webpack-loader-syntax
+(mapboxgl as any).workerClass =
+  // eslint-disable-next-line import/no-webpack-loader-syntax
+  require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
 function LocationMap() {
   const defaultParams = {
