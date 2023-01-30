@@ -48,6 +48,7 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.14.191",
-    "@types/react-lottie": "^1.2.6"
+    "@types/react-lottie": "^1.2.6",
+    "@types/react-map-gl": "^6.1.3"
   }
 }
