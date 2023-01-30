@@ -8,7 +8,6 @@ import Credit from "../../components/credit/credit";
 function Home() {
   return (
     <div className="home container">
-      <Credit />
       <div className="home__content mb-6">
         <span className="home__section mb-6">
           <h1 className="home__title">
@@ -27,6 +26,7 @@ function Home() {
         </span>
       </div>
       <LocationMap></LocationMap>
+      <Credit />
     </div>
   );
 }

@@ -1,8 +1,9 @@
 import React from "react";
+import "./credit.scss";
 
 function Credit() {
   return (
-    <div className="w-full text-center mb-4">
+    <div className="credit">
       Designed & Developed By{" "}
       <b>
         <a href="https://arvnd.in" target="_blank" rel="noreferrer">
