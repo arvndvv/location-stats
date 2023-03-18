@@ -16,13 +16,13 @@ import Credit from "../credit/credit";
 
 function LocationMap() {
   const defaultParams = {
-    q: "India",
-    place_id: "297834071",
+    q: "New Delhi, Delhi, India",
+    place_id: "298045153",
   };
   const defaultViewPort = {
     active: true,
-    longitude: 78.6677428,
-    latitude: 22.3511148,
+    longitude: 77.2090057,
+    latitude: 28.6138954,
     zoom: 6,
   };
   const [viewport, setViewport] = useState<IViewport>(defaultViewPort);
