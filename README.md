@@ -2,6 +2,8 @@
 
 A front end application, where user can search for places and view population data if available. The application uses, [nominatim](https://nominatim.org) apis to collect the location data. Mapbox is used to display the map.
 
+# Preview
+https://maps.arvnd.in/
 
 ## Installation
 - Clone the repository
