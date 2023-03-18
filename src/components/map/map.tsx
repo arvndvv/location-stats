@@ -16,13 +16,13 @@ import Credit from "../credit/credit";
 
 function LocationMap() {
   const defaultParams = {
-    q: "Boston,+Suffolk+County,+Massachusetts,+United+States",
-    place_id: "297978730",
+    q: "India",
+    place_id: "297834071",
   };
   const defaultViewPort = {
     active: true,
-    longitude: -71.057778,
-    latitude: 42.360278,
+    longitude: 78.6677428,
+    latitude: 22.3511148,
     zoom: 6,
   };
   const [viewport, setViewport] = useState<IViewport>(defaultViewPort);
